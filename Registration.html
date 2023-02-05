@@ -1,14 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="Style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <link rel="stylesheet" href="ass_2.css">
+    <title>Assignment-2 :Design</title>
 </head>
-<body style="background:linear-gradient(#D9ACF5)">
-    <h1 style="text-align: center;padding: 50px;">Application Form</h1>
-    
+
+<body>
+    <!-- 2 -->
+    <form id="cont">
+        <h1 style="text-align: center; margin-bottom: 20px;">Application Form</h1>
+        <hr style="color: beige;">
+        <h2><u>User Details</u></h2>
+
+        <label for="fname">Name:</label>
+        <br>
+        <input type="text" name="" id="fname" class="box2" placeholder="First Name" required>
+        <input type="text" name="" id="" class="box2" placeholder="Middle Name">
+        <input type="text" name="" id="" class="box2" placeholder="Last Name" required><br>
+
+        <label for="fn">Father's name:</label><br>
+        <input type="text" name="" id="fn" class="box" placeholder="Enter your Father's Name" required><br>
+
+        <label for="mn">Mother's name:</label><br>
+        <input type="text" name="" id="mn" class="box" placeholder="Enter your Mother's Name" required><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="text" name="" id="contact" class="box" value="+91" pattern="[0-9]{10}" placeholder="+91"
+            required><br>
+
+        <label for="email">Email:</label> <br>
+        <input type="email" class="box" id="email" placeholder="Enter your email address" required><br>
+
+        <label>Gender:</label><br>
+        <div style="padding: 15px; font-size: 18px;">
+            <input type="radio" name="gender" value="male" required>Male
+            <input type="radio" name="gender" value="female" required>Female
+            <input type="radio" name="gender" value="others" required>Others<br>
+        </div>
+
+        <label for="date">Date of Birth:</label>
+        <input type="date" class="box" id="date" required style="width:150px; border-radius:50px;"><br>
+
+        <!-- 2 -->
+        <h2><u>Address Details</u></h2>
+        <h4>Present Address:</h4><br>
+        <input type="text" name="" id="" class="box2" placeholder="At" required>
+        <input type="text" name="" id="" class="box2" placeholder="Post" required>
+        <input type="text" name="" id="" class="box2" placeholder="District" required><br>
+        <input type="text" name="" id="" class="box2" placeholder="State" required>
+        <input type="text" name="" id="" class="box2" placeholder="Pin" required>
+        <input type="text" name="" id="" class="box2" placeholder="Phone No." required>
+
+        <h4>Communication Address:</h4><br>
+
+        <div style="padding: 10px; font-size: 18px;"><input type="checkbox">Same as Present Address<br></div>
+
+        <input type="text" name="" id="" class="box2" placeholder="At" required>
+        <input type="text" name="" id="" class="box2" placeholder="Post" required>
+        <input type="text" name="" id="" class="box2" placeholder="District" required><br>
+        <input type="text" name="" id="" class="box2" placeholder="State" required>
+        <input type="text" name="" id="" class="box2" placeholder="Pin" required>
+        <input type="text" name="" id="" class="box2" placeholder="Phone No." required>
+
+        <!-- 3 -->
+        <h2><u>Educational Details</u></h2>
+        <table>
+            <thead>
+                <th>
+                    <label>Exam</label>
+                </th>
+                <th>
+                    <label>Board/University</label>
+                </th>
+                <th>
+                    <label>Year of Passing</label>
+                </th>
+                <th>
+                    <label>Percentage/CGPA</label>
+                </th>
+                <th>
+                    <label>Division</label>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="a">Matriculation(10<sup>th</sup>)</label>
+                    </td>
+                    <td><input type="text" id="a" class="box3"></td>
+                    <td><input type="text" class="box3"></td>
+                    <td><input type="text" class="box3"></td>
+                    <td><input type="text" class="box3"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="b">Intermediate(12<sup>th</sup>)</label>
+                    </td>
+                    <td><input type="text" id="b" class="box3"></td>
+                    <td><input type="text" class="box3"></td>
+                    <td><input type="text" class="box3"></td>
+                    <td><input type="text" class="box3"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="c">B-Tech</label>
+                    </td>
+                    <td><input type="text" id="c" class="box3"></td>
+                    <td><input type="text" class="box3"></td>
+                    <td><input type="text" class="box3"></td>
+                    <td><input type="text" class="box3"></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <!-- 4 -->
+        <div style="margin-top: 20px;">
+            <label>Upload Photo: </label><input type="file" name="pic"><br>
+            <label>Upload Signature: </label><input type="file" name="sign"><br style="margin-top: 20px;">
+        </div>
+
+        <!-- 5 -->
+        <input type="checkbox" name="" id="agree">I hereby declare that the above particulars of facts and information
+        stated
+        are correct to the best of my belief and knowledge. All the facts in this resume are correct and truthful. I
+        hereby declare that all the facts mentioned above are accurates and I take full responsibility for their
+        accuracy.<br>
+
+        <input type="submit" value="Submit" class="btn">
+
+    </form>
 </body>
+
 </html>
